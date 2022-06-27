@@ -6,4 +6,4 @@ def check_http_response(transaction, response):
 
     if transaction == 'add_to_cart':
         if 'добавлен в корзину' not in response_body:
-            response.failure(response_body)
+            response.failure('Wrong response body')
