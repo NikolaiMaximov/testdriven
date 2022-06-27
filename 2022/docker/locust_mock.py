@@ -20,7 +20,7 @@ async def add_to_cart(request: Request):
     prod_code = product['Prod_code']
     answers = [
         f"Товар #{prod_code} - '{prod_name}' добавлен в корзину",
-#        "Ошибка добавления товара",
+        "Ошибка добавления товара",
         ]
     return random.choice(answers)
 
